@@ -1,2 +1,3 @@
-./web-server/.dockerignore
-./web-server/.env
+web-server/.env
+web-server/.dockerignore
+
