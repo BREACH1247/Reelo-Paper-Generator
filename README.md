@@ -42,7 +42,7 @@ The problem statement here is that you need to generate a question paper of 100 
 ## 📝 | System Design
 
 <p align = center>
-    <img alt="Project Logo" src="https://raw.githubusercontent.com/muKaustav/dyte_log_server/main/assets/system_des.png" target="_blank" />
+    <img alt="Project Logo" src="https://github.com/BREACH1247/Reelo-Paper-Generator/blob/eedc65b28d04365b1f0ec94ca33ca752e528886a/assets/Reelo%20System%20Design.png" target="_blank" />
 </p>
 
 ### Features Implemented:
