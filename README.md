@@ -42,37 +42,35 @@ The problem statement here is that you need to generate a question paper of 100 
 ## 📝 | System Design
 
 <p align = center>
-    <img alt="Project Logo" src="https://github.com/BREACH1247/Reelo-Paper-Generator/blob/eedc65b28d04365b1f0ec94ca33ca752e528886a/assets/Reelo%20System%20Design.png" target="_blank" />
+    <img alt="Project Logo" src="https://github.com/BREACH1247/Reelo-Paper-Generator/blob/40df3ad8e572e315b9d3b522ab3fdc37e1f404cc/assets/Reelo%20System%20Design.png" target="_blank" />
 </p>
 
 ### Features Implemented:
 
 - The web-service is Load Balanced to avoid failover.
+- The web service is dockerized to ease out deployment and production.
+- The web-service can load test data statically through already provided data.
+- Web Service can generate a paper for any number of total marks given as long as its feasible and those number of questions exist.
 
 ### Current Architecture:
 
 - Containerized approach to solving the problem statement.
-- Given the **non-blocking** & **async I/O** of **FastAPI**, it is used as the web framework. This will help in ingesting logs at a faster rate.
-- **Apache Kafka** is used as the message broker. It will help in decoupling the ingestion and querying process.
-- **Apache Cassandra** is used as the database. It is a NoSQL database and is highly scalable. It will help in storing the logs in a **distributed** manner. It also provides a fast read/write speed, i.e. **high throughput**.
-- Query interface is built upon **Elasticsearch**. It is a distributed, RESTful search and analytics engine. It helps in providing a fast search result. Elasticsearch works wonders with large databases, with **high processing speeds**.
-- The logs are ingested via an HTTP server, which runs on port `3000` by default.
+- Given the **Non-Blocking and Async Code Execution** of NodeJS the code doesn't get blocked of delayed due to a resource consuming task. 
+- **MongoDB** is being used as a DB in this service. Due to the service requirements a NoSQL DB like MongoDB with a huge community support and high read and write speeds was a good match.
+- The service is load balanced using **Nginx** in order to withstand large number of incoming api requests and failovers.
 
 ### Future Scope:
 
 - The current architecture is a very basic implementation of the problem statement.
 - Depending upon the scale, the entire architecture can be **scaled horizontally**.
-- Load Balancing can be implemented to handle high volumes of logs efficiently. We might use **AWS ELB**.
-- **Apache Flink** can be setup between Kafka and Cassandra for streaming, processing and analytics.
-- **Cassandra** can be used as a Data Lake, and **Apache Spark** can be used for analytics.
-- **JWT Authentication** can be implemented for the Web UI. (didn't have time)
-- **Regex filters** can be implemented on Elasticsearch. (didn't have time)
+- Load Balancing can be further implemented to handle high volumes of requests efficiently. We might use **AWS ELB**.
+- Topic wise paper generation can be implemented in order to specify the paper generation scope.
 
 ## 🧑🏽 | Author
 
 **Aditya Sinha**
 
-- Linkedin: [@AdityaSinha](https://www.linkedin.com/in/aditya-s-a07a54121/)
+- Linkedin: [@Aditya Sinha](https://www.linkedin.com/in/aditya-s-a07a54121/)
 - Github: [@BREACH1247](https://github.com/BREACH1247)
 
 <br/>
