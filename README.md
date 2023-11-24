@@ -70,7 +70,7 @@ The problem statement here is that you need to generate a question paper of 100 
 
 ## 🧑🏽 | Author
 
-**Kaustav Mukhopadhyay**
+**Aditya Sinha**
 
 - Linkedin: [@AdityaSinha](https://www.linkedin.com/in/aditya-s-a07a54121/)
 - Github: [@BREACH1247](https://github.com/BREACH1247)
